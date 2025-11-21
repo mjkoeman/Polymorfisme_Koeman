@@ -8,7 +8,7 @@ namespace Polymorfisme
 {
     public abstract class Vorm
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         public abstract double BerekenOppervlakte();
     }
