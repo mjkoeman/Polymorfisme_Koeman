@@ -26,7 +26,29 @@ Ondanks dat beide objecten via dezelfde `Vorm` referentie benaderd worden, wordt
 ## Class Diagram
 Het volgende class diagram toont de relaties tussen de klassen:
 
-![class diagram](ClassDiagram.png)
+```mermaid
+classDiagram
+    class Vorm {
+        <<abstract>>
+        +string Name
+        +BerekenOppervlakte()* double
+    }
+    
+    class Cirkel {
+        +double Straal
+        +BerekenOppervlakte() double
+        +Cirkel(string name, double straal)
+    }
+    
+    class Vierkant {
+        +double Rib
+        +BerekenOppervlakte() double
+        +Vierkant(string name, double rib)
+    }
+    
+    Vorm <|-- Cirkel
+    Vorm <|-- Vierkant
+```
 
 ## Hoe te gebruiken
 1. Compileer het project met `dotnet build`
