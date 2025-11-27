@@ -6,7 +6,7 @@ Console.WriteLine("Voorbeeld polymorfisme");
 // De "Vorm" neemt hier de vorm van een "Cirkel" aan
 Vorm deVorm = new Cirkel("cirkel", 100);
 double area = deVorm.BerekenOppervlakte();
-double circumference = ((Cirkel)deVorm).BerekenOmtrek();
+double circumference = deVorm.BerekenOmtrek();
 Console.WriteLine($"De oppervlakte van {deVorm.Name} is {area}");
 Console.WriteLine($"De omtrek van {deVorm.Name} is {circumference}");
 

@@ -10,6 +10,12 @@ namespace Polymorfisme
     {
         public double Straal { get; set; }
 
+         public Cirkel(string name, double straal)
+        {
+            Name = name;
+            Straal = straal;
+        }
+
         public override double BerekenOppervlakte()
         {
             return Math.PI * Straal * Straal;
@@ -18,12 +24,6 @@ namespace Polymorfisme
         public override double BerekenOmtrek()
         {
             return 2 * Math.PI * Straal;
-        }
-
-        public Cirkel(string name, double straal)
-        {
-            Name = name;
-            Straal = straal;
         }
     }
 }
