@@ -11,5 +11,6 @@ namespace Polymorfisme
         public string Name { get; set; } = null!;
 
         public abstract double BerekenOppervlakte();
+        public abstract double BerekenOmtrek();
     }
 }

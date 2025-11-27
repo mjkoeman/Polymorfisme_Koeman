@@ -9,16 +9,20 @@ namespace Polymorfisme
     public class Vierkant : Vorm
     {
         public double Rib { get; set; }
+            public Vierkant(string name, double rib)
+        {
+            Name = name;
+            Rib = rib;
+        }
 
         public override double BerekenOppervlakte()
         {
             return Rib * Rib;
         }
 
-        public Vierkant(string name, double rib)
+        public override double BerekenOmtrek()
         {
-            Name = name;
-            Rib = rib;
+            return 4 * Rib;
         }
     }
 }

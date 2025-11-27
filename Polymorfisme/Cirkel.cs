@@ -15,6 +15,11 @@ namespace Polymorfisme
             return Math.PI * Straal * Straal;
         }
 
+        public override double BerekenOmtrek()
+        {
+            return 2 * Math.PI * Straal;
+        }
+
         public Cirkel(string name, double straal)
         {
             Name = name;
