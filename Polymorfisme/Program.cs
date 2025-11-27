@@ -13,4 +13,7 @@ deVorm = new Vierkant("vierkant", 100);
 area = deVorm.BerekenOppervlakte();
 Console.WriteLine($"De oppervlakte van {deVorm.Name} is {area}");
 
-
+//De "Vorm" neemt nu de vorm van "Driehoek" aan
+deVorm = new Driehoek("driehoek", 100, 50);
+area = deVorm.BerekenOppervlakte();
+Console.WriteLine($"De oppervlakte van {deVorm.Name} is {area}");
